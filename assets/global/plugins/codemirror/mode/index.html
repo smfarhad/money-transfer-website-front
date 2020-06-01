@@ -1,0 +1,364 @@
+<!doctype html>
+<title>CodeMirror: Language Modes</title>
+<meta charset="utf-8" />
+<link rel=stylesheet href="../doc/docs.css">
+<div id=nav>
+    <a href="http://codemirror.net">
+        <h1>CodeMirror</h1>
+        <img id=logo src="../doc/logo.png">
+    </a>
+    <ul>
+        <li>
+            <a href="../index.php">Home</a>
+            <li>
+                <a href="../doc/manual.html">Manual</a>
+                <li>
+                    <a href="https://github.com/codemirror/codemirror">Code</a>
+    </ul>
+    <ul>
+        <li>
+            <a class=active href="#">Language modes</a>
+    </ul>
+</div>
+<article>
+    <h2>Language modes</h2>
+    <p>This is a list of every mode in the distribution. Each mode lives in a subdirectory of the <code>mode/</code> directory, and typically defines a single JavaScript file that implements the mode. Loading such file will make the language available to
+        CodeMirror, through the
+        <a href="../doc/manual.html#option_mode"><code>mode</code></a> option.</p>
+    <div style="-webkit-columns: 100px 2; -moz-columns: 100px 2; columns: 100px 2;">
+        <ul style="margin-top: 0">
+            <li>
+                <a href="apl/index.php">APL</a>
+            </li>
+            <li>
+                <a href="asn.1/index.php">ASN.1</a>
+            </li>
+            <li>
+                <a href="asterisk/index.php">Asterisk dialplan</a>
+            </li>
+            <li>
+                <a href="brainfuck/index.php">Brainfuck</a>
+            </li>
+            <li>
+                <a href="clike/index.php">C, C++, C#</a>
+            </li>
+            <li>
+                <a href="clojure/index.php">Clojure</a>
+            </li>
+            <li>
+                <a href="cmake/index.php">CMake</a>
+            </li>
+            <li>
+                <a href="cobol/index.php">COBOL</a>
+            </li>
+            <li>
+                <a href="coffeescript/index.php">CoffeeScript</a>
+            </li>
+            <li>
+                <a href="commonlisp/index.php">Common Lisp</a>
+            </li>
+            <li>
+                <a href="css/index.php">CSS</a>
+            </li>
+            <li>
+                <a href="cypher/index.php">Cypher</a>
+            </li>
+            <li>
+                <a href="python/index.php">Cython</a>
+            </li>
+            <li>
+                <a href="d/index.php">D</a>
+            </li>
+            <li>
+                <a href="dart/index.php">Dart</a>
+            </li>
+            <li>
+                <a href="django/index.php">Django</a> (templating language)</li>
+            <li>
+                <a href="dockerfile/index.php">Dockerfile</a>
+            </li>
+            <li>
+                <a href="diff/index.php">diff</a>
+            </li>
+            <li>
+                <a href="dtd/index.php">DTD</a>
+            </li>
+            <li>
+                <a href="dylan/index.php">Dylan</a>
+            </li>
+            <li>
+                <a href="ebnf/index.php">EBNF</a>
+            </li>
+            <li>
+                <a href="ecl/index.php">ECL</a>
+            </li>
+            <li>
+                <a href="eiffel/index.php">Eiffel</a>
+            </li>
+            <li>
+                <a href="elm/index.php">Elm</a>
+            </li>
+            <li>
+                <a href="erlang/index.php">Erlang</a>
+            </li>
+            <li>
+                <a href="factor/index.php">Factor</a>
+            </li>
+            <li>
+                <a href="forth/index.php">Forth</a>
+            </li>
+            <li>
+                <a href="fortran/index.php">Fortran</a>
+            </li>
+            <li>
+                <a href="mllike/index.php">F#</a>
+            </li>
+            <li>
+                <a href="gas/index.php">Gas</a> (AT&amp;T-style assembly)</li>
+            <li>
+                <a href="gherkin/index.php">Gherkin</a>
+            </li>
+            <li>
+                <a href="go/index.php">Go</a>
+            </li>
+            <li>
+                <a href="groovy/index.php">Groovy</a>
+            </li>
+            <li>
+                <a href="haml/index.php">HAML</a>
+            </li>
+            <li>
+                <a href="handlebars/index.php">Handlebars</a>
+            </li>
+            <li>
+                <a href="haskell/index.php">Haskell</a>
+            </li>
+            <li>
+                <a href="haxe/index.php">Haxe</a>
+            </li>
+            <li>
+                <a href="htmlembedded/index.php">HTML embedded</a> (JSP, ASP.NET)</li>
+            <li>
+                <a href="htmlmixed/index.php">HTML mixed-mode</a>
+            </li>
+            <li>
+                <a href="http/index.php">HTTP</a>
+            </li>
+            <li>
+                <a href="idl/index.php">IDL</a>
+            </li>
+            <li>
+                <a href="clike/index.php">Java</a>
+            </li>
+            <li>
+                <a href="jade/index.php">Jade</a>
+            </li>
+            <li>
+                <a href="javascript/index.php">JavaScript</a>
+            </li>
+            <li>
+                <a href="jinja2/index.php">Jinja2</a>
+            </li>
+            <li>
+                <a href="julia/index.php">Julia</a>
+            </li>
+            <li>
+                <a href="kotlin/index.php">Kotlin</a>
+            </li>
+            <li>
+                <a href="css/less.html">LESS</a>
+            </li>
+            <li>
+                <a href="livescript/index.php">LiveScript</a>
+            </li>
+            <li>
+                <a href="lua/index.php">Lua</a>
+            </li>
+            <li>
+                <a href="markdown/index.php">Markdown</a> (
+                <a href="gfm/index.php">GitHub-flavour</a>)</li>
+            <li>
+                <a href="mathematica/index.php">Mathematica</a>
+            </li>
+            <li>
+                <a href="mirc/index.php">mIRC</a>
+            </li>
+            <li>
+                <a href="modelica/index.php">Modelica</a>
+            </li>
+            <li>
+                <a href="mumps/index.php">MUMPS</a>
+            </li>
+            <li>
+                <a href="nginx/index.php">Nginx</a>
+            </li>
+            <li>
+                <a href="ntriples/index.php">NTriples</a>
+            </li>
+            <li>
+                <a href="clike/index.php">Objective C</a>
+            </li>
+            <li>
+                <a href="mllike/index.php">OCaml</a>
+            </li>
+            <li>
+                <a href="octave/index.php">Octave</a> (MATLAB)</li>
+            <li>
+                <a href="pascal/index.php">Pascal</a>
+            </li>
+            <li>
+                <a href="pegjs/index.php">PEG.js</a>
+            </li>
+            <li>
+                <a href="perl/index.php">Perl</a>
+            </li>
+            <li>
+                <a href="asciiarmor/index.php">PGP (ASCII armor)</a>
+            </li>
+            <li>
+                <a href="php/index.php">PHP</a>
+            </li>
+            <li>
+                <a href="pig/index.php">Pig Latin</a>
+            </li>
+            <li>
+                <a href="properties/index.php">Properties files</a>
+            </li>
+            <li>
+                <a href="puppet/index.php">Puppet</a>
+            </li>
+            <li>
+                <a href="python/index.php">Python</a>
+            </li>
+            <li>
+                <a href="q/index.php">Q</a>
+            </li>
+            <li>
+                <a href="r/index.php">R</a>
+            </li>
+            <li>
+                <a href="rpm/index.php">RPM</a>
+            </li>
+            <li>
+                <a href="rst/index.php">reStructuredText</a>
+            </li>
+            <li>
+                <a href="ruby/index.php">Ruby</a>
+            </li>
+            <li>
+                <a href="rust/index.php">Rust</a>
+            </li>
+            <li>
+                <a href="sass/index.php">Sass</a>
+            </li>
+            <li>
+                <a href="spreadsheet/index.php">Spreadsheet</a>
+            </li>
+            <li>
+                <a href="clike/scala.html">Scala</a>
+            </li>
+            <li>
+                <a href="scheme/index.php">Scheme</a>
+            </li>
+            <li>
+                <a href="css/scss.html">SCSS</a>
+            </li>
+            <li>
+                <a href="shell/index.php">Shell</a>
+            </li>
+            <li>
+                <a href="sieve/index.php">Sieve</a>
+            </li>
+            <li>
+                <a href="slim/index.php">Slim</a>
+            </li>
+            <li>
+                <a href="smalltalk/index.php">Smalltalk</a>
+            </li>
+            <li>
+                <a href="smarty/index.php">Smarty</a>
+            </li>
+            <li>
+                <a href="solr/index.php">Solr</a>
+            </li>
+            <li>
+                <a href="soy/index.php">Soy</a>
+            </li>
+            <li>
+                <a href="stylus/index.php">Stylus</a>
+            </li>
+            <li>
+                <a href="sql/index.php">SQL</a> (several dialects)</li>
+            <li>
+                <a href="sparql/index.php">SPARQL</a>
+            </li>
+            <li>
+                <a href="clike/index.php">Squirrel</a>
+            </li>
+            <li>
+                <a href="swift/index.php">Swift</a>
+            </li>
+            <li>
+                <a href="stex/index.php">sTeX, LaTeX</a>
+            </li>
+            <li>
+                <a href="tcl/index.php">Tcl</a>
+            </li>
+            <li>
+                <a href="textile/index.php">Textile</a>
+            </li>
+            <li>
+                <a href="tiddlywiki/index.php">Tiddlywiki</a>
+            </li>
+            <li>
+                <a href="tiki/index.php">Tiki wiki</a>
+            </li>
+            <li>
+                <a href="toml/index.php">TOML</a>
+            </li>
+            <li>
+                <a href="tornado/index.php">Tornado</a> (templating language)</li>
+            <li>
+                <a href="troff/index.php">troff</a> (for manpages)</li>
+            <li>
+                <a href="ttcn/index.php">TTCN</a>
+            </li>
+            <li>
+                <a href="ttcn-cfg/index.php">TTCN Configuration</a>
+            </li>
+            <li>
+                <a href="turtle/index.php">Turtle</a>
+            </li>
+            <li>
+                <a href="twig/index.php">Twig</a>
+            </li>
+            <li>
+                <a href="vb/index.php">VB.NET</a>
+            </li>
+            <li>
+                <a href="vbscript/index.php">VBScript</a>
+            </li>
+            <li>
+                <a href="velocity/index.php">Velocity</a>
+            </li>
+            <li>
+                <a href="verilog/index.php">Verilog/SystemVerilog</a>
+            </li>
+            <li>
+                <a href="vhdl/index.php">VHDL</a>
+            </li>
+            <li>
+                <a href="xml/index.php">XML/HTML</a>
+            </li>
+            <li>
+                <a href="xquery/index.php">XQuery</a>
+            </li>
+            <li>
+                <a href="yaml/index.php">YAML</a>
+            </li>
+            <li>
+                <a href="z80/index.php">Z80</a>
+            </li>
+        </ul>
+    </div>
+</article>

@@ -1,0 +1,17 @@
+div#message{
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 99;
+  display: none;
+}
+ul.dropdown-menu{
+      z-index: 9999;
+}
+div.status-div{
+    display: none;
+}
